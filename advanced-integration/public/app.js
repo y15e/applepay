@@ -23,7 +23,7 @@ async function setupApplepay() {
 
     const paymentRequest = {
       countryCode,
-      currencyCode: 'USD',
+      currencyCode: 'JPY',
       merchantCapabilities,
       supportedNetworks,
       requiredBillingContactFields: [
@@ -35,8 +35,8 @@ async function setupApplepay() {
       requiredShippingContactFields: [
       ],
       total: {
-        label: "Demo (Card is not charged)",
-        amount: "10.00",
+        label: "ywatanabe demo app",
+        amount: "10",
         type: "final",
       },
     };
